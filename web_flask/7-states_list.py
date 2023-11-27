@@ -14,7 +14,7 @@ def states_list():
     """
     path = '7-states_list.html'
     states = storage.all(State)
-    # sort State object alphabetically by name
+    """sort State object alphabetically by name"""
     sorted_states = sorted(states.values(), key=lambda state: state.name)
     return render_template(path, sorted_states=sorted_states)
 
